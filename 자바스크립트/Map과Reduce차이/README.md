@@ -4,9 +4,27 @@ Map의 경우에 **Array.map((요소, 인덱스, 배열) => { return 요소 });*
 
 즉, 배열을 1대1로 매핑하게 되기 때문에 기존 객체를 수정하지 않는 메소드라고 정리할 수 있습니다. 
 
-GIST
-
-https://gist.github.com/lllilllilllilili/65c10eaf1cbcf1c2b12f38a4813089fa.js
+```javascript
+const data = [
+        {
+          text: 'JS 공부하기',
+          isCompleted: true,
+        },
+        {
+          text: 'JS 복습하기',
+          isCompleted: false,
+        },
+      ]
+      
+      function TodoList(data){
+       this.render = function(){
+          data.map((value, index) =>{
+            console.log(value.text + " "+ index)
+            document.querySelector('#todo-list').innerHTML=`<div>${value.text}</div>`
+          })
+       }    
+      }
+```
 
 
 
@@ -16,9 +34,20 @@ Reduce의 경우에는 **Array.reduce((누적값, 현재값, 인덱스) => {retu
 
 이를 통해 배열 형태에서 원하는 형태로 값을 변환시키고 filter, sort, every 등의 기능으로 활용해서 사용할 수 있습니다. 
 
-GIST
-
-https://gist.github.com/lllilllilllilili/9a3b1625aa9bc973e13e1b03026670bf.js
+```javascript
+try{
+            this.state.reduce((acc, cur, i) =>{
+                //[Mission1] 보너스 구현사항 isCompleted 처리
+                if(cur.isCompleted===true){
+                    document.querySelector(`#${selector}`).innerHTML+=`<div><s>${cur.text}</s></div>`
+                }else{
+                    document.querySelector(`#${selector}`).innerHTML+=`<div>${cur.text}</div>`
+                }
+            },"")
+        }catch(e){
+            console.log(e);
+        }
+```
 
 
 
