@@ -9,12 +9,11 @@ ver 2021
 </h1>
 
 <p align="center">
-
+<p align="center">
   <a href="https://github.com/MakeNowJust/sushi-ware">
-
     <img src="https://img.shields.io/badge/license-SUSHI--WARE%F0%9F%8D%A3-blue.svg" alt="SUSHI-WARE LICENSE">
-
-  </a></p>
+  </a>
+</p>
 
 ## 개요
 
@@ -30,7 +29,7 @@ TIL에 대한 정의가 낯설다면,
 
 ## 목차
 
-example
+example>
 
 - [자바스크립트](#자바스크립트)
 
@@ -38,5 +37,5 @@ example
 
 ### 자바스크립트
 
--[Map과 Reduce의차이]()
+- [Map과 Reduce의차이](https://github.com/Hello-TWL/2021-TWL/tree/main/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Map%EA%B3%BCReduce%EC%B0%A8%EC%9D%B4)
 
