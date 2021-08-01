@@ -1,3 +1,5 @@
+## TimeZone 수정하기
+
 CREATE OR REPLACE TABLE aladin_demo.purchase_complete
 (
   eventTime STRING not null,
